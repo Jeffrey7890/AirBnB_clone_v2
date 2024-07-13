@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # setup a static web site
-apt update
-apt-get install -y nginx
-systemctl restart nginx
+apt-get -y update
+apt-get -y upgrade
+apt-get -y install nginx
 DIRS=("/data/" "/data/web_static/" "/data/web_static/releases/" "/data/web_static/shared/" "/data/web_static/releases/test/")
 
 for dir in "${DIRS[@]}"; do
