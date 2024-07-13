@@ -2,6 +2,7 @@
 # setup a static web site
 apt update
 apt-get install -y nginx
+systemctl restart nginx
 DIRS=("/data/" "/data/web_static/" "/data/web_static/releases/" "/data/web_static/shared/" "/data/web_static/releases/test/")
 
 for dir in "${DIRS[@]}"; do
