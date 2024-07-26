@@ -31,7 +31,7 @@ def var_url_again(text):
     """ response to variable url with python/ """
     if text is None:
         return ("Python is Cool")
-    result = "Python " + text.replace('_', ' ')
+    result = "Python " + escape(text).replace('_', ' ')
     return (result)
 
 
