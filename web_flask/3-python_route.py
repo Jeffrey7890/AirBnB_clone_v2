@@ -30,7 +30,7 @@ def var_url(name):
 def var_url_again(text):
     """ response to variable url with python/ """
     if text is None:
-        return ("Python is Cool")
+        return ("Python is cool")
     result = "Python " + escape(text).replace('_', ' ')
     return (result)
 
